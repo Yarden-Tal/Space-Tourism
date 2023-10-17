@@ -5,8 +5,9 @@ useHead({
 </script>
 
 <template>
-  <div class="flex">
-    <div class="">
+  <SharedTheHeader />
+  <main class="flex bg-background-home-desktop">
+    <div>
       <p>So, you want to travel to</p>
       <h1>Space</h1>
       <p>
@@ -17,5 +18,5 @@ useHead({
       </p>
     </div>
     <NuxtLink :to="'/destination'">Explore</NuxtLink>
-  </div>
+  </main>
 </template>

@@ -4,5 +4,6 @@ useHead({
 });
 </script>
 <template>
-  <div></div>
+  <SharedTheHeader />
+  <main></main>
 </template>

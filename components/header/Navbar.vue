@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { links } from "../data/miscData";
+import { links } from "~/data/miscData";
 </script>
 
 <template>

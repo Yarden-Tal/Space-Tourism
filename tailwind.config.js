@@ -9,7 +9,16 @@ module.exports = {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "background-home-desktop":
+          "url('assets/images/home/background-home-desktop.jpg')",
+      },
+      colors: {
+        "space-black": "#0B0D17",
+        blueish: "#D0D6F9",
+      },
+    },
   },
   plugins: [],
   devtools: { enabled: true },
