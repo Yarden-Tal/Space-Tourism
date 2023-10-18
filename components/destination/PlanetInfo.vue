@@ -14,16 +14,22 @@ const currentPlanet = ref<Planet>(destinations[0]);
       <h1 class="text-h2 font-bellefair">
         {{ currentPlanet.name.toUpperCase() }}
       </h1>
-      <p>{{ currentPlanet.description }}</p>
+      <p class="text-lg font-barlow text-blueish">
+        {{ currentPlanet.description }}
+      </p>
       <hr class="opacity-25 mt-10 mb-5" />
       <div class="flex gap-20">
         <div>
-          <div>AVG. DISTANCE</div>
-          <div>{{ currentPlanet.distance.toUpperCase() }}</div>
+          <div class="text-blueish font-barlow mb-1">AVG. DISTANCE</div>
+          <div class="font-bellefair">
+            {{ currentPlanet.distance.toUpperCase() }}
+          </div>
         </div>
         <div>
-          <div>EST. TRAVEL TIME</div>
-          <div>{{ currentPlanet.travel.toUpperCase() }}</div>
+          <div class="text-blueish font-barlow mb-1">EST. TRAVEL TIME</div>
+          <div class="font-bellefair">
+            {{ currentPlanet.travel.toUpperCase() }}
+          </div>
         </div>
       </div>
     </div>

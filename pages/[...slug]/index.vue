@@ -11,11 +11,11 @@ useHead({
     <SharedTheHeader />
     <main class="flex justify-between items-center !mt-36 mx-28">
       <div class="w-[27%]">
-        <p class="font-barlow text-h5">
+        <p class="font-barlow text-h5 text-blueish">
           {{ "So, you want to travel to".toUpperCase() }}
         </p>
         <h1 class="font-bellefair text-h1">{{ "Space".toUpperCase() }}</h1>
-        <p class="font-barlow text-lg">{{ data.homepageTxt }}</p>
+        <p class="font-barlow text-lg text-blueish">{{ data.homepageTxt }}</p>
       </div>
       <NuxtLink class="w-1/3" :to="'/destination'"
         ><div class="flex justify-center items-center">

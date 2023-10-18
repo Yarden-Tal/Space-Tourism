@@ -7,7 +7,12 @@ const props = defineProps(["currentPlanet"]);
 <template>
   <div>
     <ul class="flex gap-9">
-      <li class="font-barlow" v-for="(planet, i) in destinations" :key="i">
+      <li
+        class="font-barlow text-blueish"
+        v-for="(planet, i) in destinations"
+        :class="{ selected: props.currentPlanet.name === planet.name }"
+        :key="i"
+      >
         {{ planet.name.toUpperCase() }}
       </li>
     </ul>
