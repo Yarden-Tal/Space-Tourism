@@ -8,6 +8,7 @@ useHead({
     <SharedTheHeader />
     <main>
       <SharedPageTitle num="01" txt="Pick your destination" />
+      <DestinationPlanetInfo />
     </main>
   </div>
 </template>

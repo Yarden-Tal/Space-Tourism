@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      padding: {
+        inner: "6rem",
+      },
       backgroundImage: {
         "background-home-desktop":
           "url('assets/images/home/background-home-desktop.jpg')",
