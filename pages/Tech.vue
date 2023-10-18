@@ -4,6 +4,8 @@ useHead({
 });
 </script>
 <template>
-  <SharedTheHeader />
-  <main></main>
+  <div class="h-screen bg-background-technology-desktop bg-no-repeat bg-cover">
+    <SharedTheHeader />
+    <main></main>
+  </div>
 </template>

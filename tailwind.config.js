@@ -13,6 +13,12 @@ module.exports = {
       backgroundImage: {
         "background-home-desktop":
           "url('assets/images/home/background-home-desktop.jpg')",
+        "background-destination-desktop":
+          "url('assets/images/destination/background-destination-desktop.jpg')",
+        "background-crew-desktop":
+          "url('assets/images/crew/background-crew-desktop.jpg')",
+        "background-technology-desktop":
+          "url('assets/images/technology/background-technology-desktop.jpg')",
       },
       colors: {
         "space-black": "#0B0D17",
