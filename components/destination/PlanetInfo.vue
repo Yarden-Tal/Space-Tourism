@@ -4,13 +4,18 @@ import data from "../../data/data.json";
 const { destinations } = data;
 
 const currentPlanet = ref<Planet>(destinations[0]);
+
+const changePlanet = (planet: Planet) => (currentPlanet.value = planet);
 </script>
 
 <template>
   <section class="px-inner flex justify-center items-center gap-24">
     <DestinationPlanetImg :currentPlanet="currentPlanet" class="w-1/2" />
     <div class="w-1/2">
-      <DestinationPlanetsMenu :currentPlanet="currentPlanet" />
+      <DestinationPlanetsMenu
+        @current-planet-change="changePlanet"
+        :currentPlanet="currentPlanet"
+      />
       <h1 class="text-h2 font-bellefair">
         {{ currentPlanet.name.toUpperCase() }}
       </h1>

@@ -1,26 +1,34 @@
 <script setup lang="ts">
+import { Planet } from "~/models/models";
 import data from "../../data/data.json";
 const { destinations } = data;
 const props = defineProps(["currentPlanet"]);
+
+const emits = defineEmits(["currentPlanetChange"]);
+
+const changeCurrentPlanet = (planet: Planet) => {
+  emits("currentPlanetChange", planet);
+};
 </script>
 
 <template>
   <div>
     <ul class="flex gap-9">
-      <li
-        class="font-barlow text-blueish"
+      <button
+        class="font-barlow text-blueish cursor-pointer"
         v-for="(planet, i) in destinations"
         :class="{ selected: props.currentPlanet.name === planet.name }"
         :key="i"
+        @click="changeCurrentPlanet(planet)"
       >
         {{ planet.name.toUpperCase() }}
-      </li>
+      </button>
     </ul>
   </div>
 </template>
 
 <style scoped>
-li {
+button {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border-bottom: 3px solid transparent;
@@ -30,7 +38,7 @@ li {
 .selected {
   border-bottom-color: #fff !important;
 }
-li:hover {
+button:hover {
   border-bottom-color: #979797;
 }
 </style>
