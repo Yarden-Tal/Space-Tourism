@@ -6,6 +6,8 @@ useHead({
 <template>
   <div class="h-screen bg-background-crew-desktop bg-no-repeat bg-cover">
     <SharedTheHeader />
-    <main></main>
+    <main>
+      <SharedPageTitle num="02" txt="Meet your crew" />
+    </main>
   </div>
 </template>

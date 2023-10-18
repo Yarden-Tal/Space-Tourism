@@ -6,6 +6,8 @@ useHead({
 <template>
   <div class="h-screen bg-background-technology-desktop bg-no-repeat bg-cover">
     <SharedTheHeader />
-    <main></main>
+    <main>
+      <SharedPageTitle num="03" txt="Space launch 101" />
+    </main>
   </div>
 </template>
