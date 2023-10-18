@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "barlow";
+  src: url("assets/fonts/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "bellefair";
+  src: url("assets/fonts/Bellefair-Regular.ttf");
+}
+
 body {
   color: white;
+  font-family: "barlow";
 }

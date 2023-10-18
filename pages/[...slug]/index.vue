@@ -1,22 +1,36 @@
 <script setup lang="ts">
+import data from "../../data/data.json";
+
 useHead({
   title: "Space Travel",
 });
 </script>
 
 <template>
-  <SharedTheHeader />
-  <main class="flex bg-background-home-desktop">
-    <div>
-      <p>So, you want to travel to</p>
-      <h1>Space</h1>
-      <p>
-        Let’s face it; if you want to go to space, you might as well genuinely
-        go to outer space and not hover kind of on the edge of it. Well sit
-        back, and relax because we’ll give you a truly out of this world
-        experience!
-      </p>
-    </div>
-    <NuxtLink :to="'/destination'">Explore</NuxtLink>
-  </main>
+  <div class="h-screen bg-background-home-desktop bg-no-repeat bg-cover">
+    <SharedTheHeader />
+    <main class="flex justify-between items-center !mt-60 mx-28">
+      <div class="w-[27%]">
+        <p class="font-barlow text-h5">
+          {{ "So, you want to travel to".toUpperCase() }}
+        </p>
+        <h1 class="font-bellefair text-h1">{{ "Space".toUpperCase() }}</h1>
+        <p class="font-barlow text-lg">{{ data.homepageTxt }}</p>
+      </div>
+      <NuxtLink class="w-1/3" :to="'/destination'"
+        ><div class="flex justify-center items-center">
+          <img
+            class="explore-img rounded-full"
+            src="../../assets/icons/explore.svg"
+            alt="Explore"
+          /></div
+      ></NuxtLink>
+    </main>
+  </div>
 </template>
+
+<style scoped>
+.explore-img:hover {
+  outline: 56px solid #ffffff2a;
+}
+</style>

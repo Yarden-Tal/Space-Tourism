@@ -18,10 +18,9 @@ logs
 .fleet
 .idea
 .fig
+.npmrc
 
 # Local env files
 .env
 .env.*
 !.env.example
-
-starter-code
