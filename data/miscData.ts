@@ -1,10 +1,10 @@
 import { HeaderLink } from "~/models/models";
 
 export const links: HeaderLink[] = [
-  { title: "00 Home", link: "/" },
-  { title: "01 Destination", link: "/destination" },
-  { title: "02 Crew", link: "/crew" },
-  { title: "03 Technology", link: "/tech" },
+  { title: "Home", num: "00", link: "/" },
+  { title: "Destination", num: "01", link: "/destination" },
+  { title: "Crew", num: "02", link: "/crew" },
+  { title: "Technology", num: "03", link: "/tech" },
 ];
 
 export const hpTxt: string = `Let’s face it; if you want to go to space, you might as well genuinely
