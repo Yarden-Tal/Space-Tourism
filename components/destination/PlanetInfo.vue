@@ -9,7 +9,7 @@ const changePlanet = (planet: Planet) => (currentPlanet.value = planet);
 </script>
 
 <template>
-  <section class="px-inner flex justify-center items-center gap-24">
+  <section class="px-44 flex justify-center items-center gap-24">
     <DestinationPlanetImg :currentPlanet="currentPlanet" class="w-1/2" />
     <div class="w-1/2">
       <DestinationPlanetsMenu
