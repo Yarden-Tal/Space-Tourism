@@ -10,7 +10,7 @@ const { crew } = data;
       clickable: true,
     }"
     :slides-per-view="1"
-    :loop="false"
+    :loop="true"
     :autoplay="{
       delay: 8000,
       disableOnInteraction: true,
