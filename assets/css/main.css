@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts */
+
 @font-face {
   font-family: "barlow";
   src: url("assets/fonts/BarlowCondensed-Regular.ttf");
@@ -12,7 +14,23 @@
   src: url("assets/fonts/Bellefair-Regular.ttf");
 }
 
+/* Globals */
+
 body {
   color: white;
   font-family: "barlow";
+}
+
+/* Swiper styles */
+
+.swiper-pagination-bullets {
+  text-align: left;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background-color: #979797;
 }

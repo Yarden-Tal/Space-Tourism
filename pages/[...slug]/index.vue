@@ -10,7 +10,7 @@ useHead({
   <div class="h-screen bg-background-home-desktop bg-no-repeat bg-cover">
     <SharedTheHeader />
     <main class="flex justify-between items-center !mt-36 mx-28">
-      <div class="w-[27%]">
+      <div class="w-[35%]">
         <p class="font-barlow text-h5 text-blueish">
           {{ "So, you want to travel to".toUpperCase() }}
         </p>
