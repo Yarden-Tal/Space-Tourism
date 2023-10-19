@@ -2,22 +2,55 @@
 useHead({
   title: "Space Travel | Crew",
 });
+
+import data from "./../data/data.json";
+const { crew } = data;
+
+const currentSlide = ref<number>(0);
+
+const handleSlideChange = (e: number) => {
+  currentSlide.value = e;
+};
 </script>
+
 <template>
   <div class="h-screen bg-background-crew-desktop bg-no-repeat bg-cover">
     <SharedTheHeader />
     <main>
       <SharedPageTitle num="02" txt="Meet your crew" />
       <section class="flex px-inner">
-        <CrewSlider class="w-[60%]" />
-        <div class="w-[40%]"></div>
-        <div class="absolute bottom-0 right-20 h-[572px]">
-          <img
-            class="h-full"
-            src="../assets/images/crew/image-douglas-hurley.png"
-            alt=""
-          />
+        <div class="w-[65%]">
+          <Swiper
+            :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination]"
+            :pagination="{
+              clickable: true,
+            }"
+            :slides-per-view="1"
+            :loop="false"
+            :autoplay="{
+              delay: 8000,
+              disableOnInteraction: true,
+            }"
+            :onSlideChange="
+              swiper => {
+                handleSlideChange(swiper.activeIndex);
+              }
+            "
+          >
+            <SwiperSlide v-for="(member, i) in crew" :key="i">
+              <div class="opacity-50 mt-14 text-h4 font-bellefair">
+                {{ member.role.toUpperCase() }}
+              </div>
+              <h1 class="font-bellefair text-h3">
+                {{ member.name.toUpperCase() }}
+              </h1>
+              <p class="mb-10 font-barlow text-blueish text-lg w-3/4">
+                {{ member.bio }}
+              </p>
+            </SwiperSlide>
+          </Swiper>
         </div>
+        <CrewImage :member="crew[currentSlide]" />
       </section>
     </main>
   </div>
