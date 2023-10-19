@@ -55,3 +55,25 @@ const handleSlideChange = (e: number) => {
     </main>
   </div>
 </template>
+
+<style>
+/* Swiper styles */
+
+.swiper-pagination-bullets {
+  text-align: left;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 1rem !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #979797;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 1rem !important;
+}
+</style>
