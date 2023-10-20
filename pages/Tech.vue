@@ -44,9 +44,7 @@ const handleStepChange = (i: number): void => {
             {{ currentTech.description }}
           </p>
         </div>
-        <div>
-          <img :src="currentTech.images.portrait" :alt="currentTech.name" />
-        </div>
+        <TechImg :current-step="currentTech" />
       </section>
     </main>
   </div>
