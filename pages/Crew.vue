@@ -14,7 +14,7 @@ const handleSlideChange = (e: number) => {
 </script>
 
 <template>
-  <div class="h-screen bg-background-crew-desktop bg-no-repeat bg-cover">
+  <div class="crew h-screen bg-background-crew-desktop bg-no-repeat bg-cover">
     <SharedTheHeader />
     <main>
       <SharedPageTitle num="02" txt="Meet your crew" />
@@ -59,18 +59,18 @@ const handleSlideChange = (e: number) => {
 <style>
 /* Swiper styles */
 
-.swiper-pagination-bullets {
+.crew .swiper-pagination-bullets {
   text-align: left;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.crew .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fff;
   width: 0.8rem;
   height: 0.8rem;
   margin-right: 1rem !important;
 }
 
-.swiper-pagination-bullet {
+.crew .swiper-pagination-bullet {
   background-color: #979797;
   width: 0.8rem;
   height: 0.8rem;
