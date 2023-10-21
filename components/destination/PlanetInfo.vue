@@ -9,7 +9,7 @@ const changePlanet = (planet: Planet) => (currentPlanet.value = planet);
 </script>
 
 <template>
-  <section class="px-44 flex justify-center items-center">
+  <section class="px-32 flex justify-center items-center">
     <DestinationPlanetImg :currentPlanet="currentPlanet" class="w-[28%]" />
     <div class="w-[15%]"></div>
     <div class="w-[37%]">

@@ -14,3 +14,12 @@ export interface Planet {
   distance: string;
   travel: string;
 }
+
+export interface Tech {
+  name: string;
+  images: {
+    portrait: string;
+    landscape: string;
+  };
+  description: string;
+}
