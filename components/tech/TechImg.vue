@@ -3,7 +3,7 @@ const props = defineProps(["currentStep"]);
 </script>
 
 <template>
-  <div class="absolute right-0 top-52 w-[35%]">
+  <div class="absolute right-0 top-52 w-[32%]">
     <Transition mode="out-in">
       <img
         v-if="props.currentStep.name.toUpperCase() === 'LAUNCH VEHICLE'"
