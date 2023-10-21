@@ -4,8 +4,30 @@ import data from "../../data/data.json";
 const { destinations } = data;
 
 const currentPlanet = ref<Planet>(destinations[0]);
+let currentIndex: number = 0;
+let planetChangeInterval: NodeJS.Timeout | null = null;
 
-const changePlanet = (planet: Planet) => (currentPlanet.value = planet);
+const startplanetChangeInterval = (): void => {
+  if (planetChangeInterval) clearInterval(planetChangeInterval);
+
+  planetChangeInterval = setInterval(() => {
+    currentIndex++;
+    if (currentIndex >= destinations.length) currentIndex = 0;
+    changePlanet(destinations[currentIndex]);
+  }, 8000);
+};
+
+startplanetChangeInterval();
+
+const changePlanet = (planet: Planet): void => {
+  currentIndex = destinations.findIndex(p => p.name === planet.name);
+  currentPlanet.value = planet;
+  startplanetChangeInterval();
+};
+
+onBeforeUnmount(() => {
+  if (planetChangeInterval) clearInterval(planetChangeInterval);
+});
 </script>
 
 <template>
