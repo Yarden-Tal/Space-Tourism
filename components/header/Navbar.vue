@@ -47,4 +47,9 @@ a {
 a:hover {
   border-bottom-color: #979797;
 }
+@media (max-width: 1024px) {
+  nav {
+    padding: 30px 130px 0px 65px;
+  }
+}
 </style>

@@ -16,6 +16,10 @@ module.exports = {
       backgroundImage: {
         "background-home-desktop":
           "url('assets/images/home/background-home-desktop.jpg')",
+        "background-home-tablet":
+          "url('assets/images/home/background-home-tablet.jpg')",
+        "background-home-mobile":
+          "url('assets/images/home/background-home-mobile.jpg')",
         "background-destination-desktop":
           "url('assets/images/destination/background-destination-desktop.jpg')",
         "background-crew-desktop":
