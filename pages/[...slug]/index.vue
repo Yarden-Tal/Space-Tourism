@@ -15,14 +15,14 @@ useHead({
       class="flex justify-between items-center md:!mt-24 lg:!mt-36 md:mx-0 lg:mx-28 md:flex-col lg:flex-row"
     >
       <div class="md:w-full lg:w-[35%]">
-        <p class="text-center font-barlow text-h5 text-blueish">
+        <p class="md:text-center lg:text-left font-barlow text-h5 text-blueish">
           {{ "So, you want to travel to".toUpperCase() }}
         </p>
-        <h1 class="text-center font-bellefair text-h1">
+        <h1 class="md:text-center lg:text-left font-bellefair text-h1">
           {{ "Space".toUpperCase() }}
         </h1>
         <p
-          class="text-center font-barlow text-lg md:w-2/3 mx-auto lg:w-full text-blueish"
+          class="md:text-center lg:text-left font-barlow text-lg md:w-2/3 mx-auto lg:w-full text-blueish"
         >
           {{ data.homepageTxt }}
         </p>
