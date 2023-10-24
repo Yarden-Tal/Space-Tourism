@@ -23,6 +23,7 @@ const handleSlideChange = (e: number) => {
       <section class="flex md:flex-col lg:flex-row px-inner">
         <div class="md:w-[100%] lg:w-[65%]">
           <Swiper
+            class="cursor-grab"
             :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination]"
             :pagination="{
               clickable: true,
