@@ -3,7 +3,9 @@ const props = defineProps(["member"]);
 </script>
 
 <template>
-  <div class="absolute bottom-0 right-[10vw] h-[32rem]">
+  <div
+    class="md:mt-6 lg:mt-0 lg:absolute lg:bottom-0 lg:right-[10vw] md:w-[50%] mx-auto lg:h-[32rem]"
+  >
     <Transition mode="out-in">
       <img
         class="h-full"
