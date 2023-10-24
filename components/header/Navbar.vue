@@ -49,7 +49,7 @@ a:hover {
 }
 @media (max-width: 1024px) {
   nav {
-    padding: 30px 130px 0px 65px;
+    padding: 30px 65px 0px 65px;
   }
 }
 </style>

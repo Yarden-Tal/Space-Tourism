@@ -12,8 +12,8 @@ const changeCurrentPlanet = (planet: Planet) => {
 </script>
 
 <template>
-  <div>
-    <ul class="flex gap-9">
+  <div class="md:mt-10 lg:mt-0">
+    <ul class="md:justify-center lg:justify-start flex gap-9">
       <button
         class="font-barlow text-blueish cursor-pointer"
         v-for="(planet, i) in destinations"

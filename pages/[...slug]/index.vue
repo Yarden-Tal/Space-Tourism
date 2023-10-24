@@ -12,7 +12,7 @@ useHead({
   >
     <SharedTheHeader />
     <main
-      class="flex justify-between items-center md:!mt-24 lg:!mt-36 mx-28 md:flex-col lg:flex-row"
+      class="flex justify-between items-center md:!mt-24 lg:!mt-36 md:mx-0 lg:mx-28 md:flex-col lg:flex-row"
     >
       <div class="md:w-full lg:w-[35%]">
         <p class="text-center font-barlow text-h5 text-blueish">
