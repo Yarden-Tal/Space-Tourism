@@ -30,6 +30,8 @@ module.exports = {
           "url('assets/images/crew/background-crew-tablet.jpg')",
         "background-technology-desktop":
           "url('assets/images/technology/background-technology-desktop.jpg')",
+        "background-technology-tablet":
+          "url('assets/images/technology/background-technology-tablet.jpg')",
       },
       colors: {
         "space-black": "#0B0D17",
