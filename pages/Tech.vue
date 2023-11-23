@@ -36,14 +36,18 @@ onBeforeUnmount(() => {
 
 <template>
   <div
-    class="tech h-screen bg-background-technology-desktop bg-no-repeat bg-cover"
+    class="tech h-screen md:bg-background-technology-tablet lg:bg-background-technology-desktop bg-no-repeat bg-cover"
   >
     <SharedTheHeader />
     <main>
       <SharedPageTitle num="03" txt="Space launch 101" />
-      <section class="flex gap-16 justify-around mt-14 pl-inner">
+      <section
+        class="flex sm:flex-col lg:flex-row gap-16 justify-around mt-14 pl-inner"
+      >
         <!-- Step buttons -->
-        <div class="flex flex-col gap-10 items-start w-[10%]">
+        <div
+          class="flex md:flex-row lg:flex-col gap-10 items-start md:w-full lg:w-[10%]"
+        >
           <button
             class="rounded-full p-8 text-h4 font-bellefair border border-opacity-25 hover:border-opacity-100 border-white w-20 h-20 flex items-center justify-center"
             :class="{ selected: currentTech.name === t.name }"
@@ -68,7 +72,7 @@ onBeforeUnmount(() => {
         </div>
 
         <!-- Placeholder div -->
-        <div class="w-[30%]"></div>
+        <div class="sm:hidden lg:block lg:w-[30%]"></div>
 
         <TechImg :current-step="currentTech" />
       </section>
