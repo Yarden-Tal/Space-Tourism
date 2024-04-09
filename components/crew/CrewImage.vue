@@ -4,7 +4,7 @@ const props = defineProps(["member"]);
 
 <template>
   <div
-    class="md:mt-6 lg:mt-0 absolute md:bottom-0 lg:bottom-0 md:right-[50%] md:translate-x-1/2 lg:translate-x-0 lg:right-[10vw] mx-auto h-[32rem] xl:h-[34rem]"
+    class="md:mt-6 lg:mt-0 absolute md:bottom-0 lg:bottom-0 md:right-[50%] md:translate-x-1/2 lg:translate-x-0 lg:right-[10vw] mx-auto h-[56vh] xl:h-[68vh]"
   >
     <Transition mode="out-in">
       <img
