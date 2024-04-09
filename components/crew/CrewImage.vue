@@ -8,25 +8,25 @@ const props = defineProps(["member"]);
   >
     <Transition mode="out-in">
       <img
-        class="h-full"
+        class="h-full object-cover"
         v-if="props.member.name === 'Douglas Hurley'"
         src="./../../assets/images/crew/image-douglas-hurley.png"
         :alt="props.member.name"
       />
       <img
-        class="h-full"
+        class="h-full object-cover"
         v-else-if="props.member.name === 'Mark Shuttleworth'"
         src="./../../assets/images/crew/image-mark-shuttleworth.png"
         :alt="props.member.name"
       />
       <img
-        class="h-full"
+        class="h-full object-cover"
         v-else-if="props.member.name === 'Victor Glover'"
         src="./../../assets/images/crew/image-victor-glover.png"
         :alt="props.member.name"
       />
       <img
-        class="h-full"
+        class="h-full object-cover"
         v-else-if="props.member.name === 'Anousheh Ansari'"
         src="./../../assets/images/crew/image-anousheh-ansari.png"
         :alt="props.member.name"
