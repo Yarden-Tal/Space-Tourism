@@ -5,7 +5,7 @@ useHead({
 </script>
 <template>
   <div
-    class="md:h-auto lg:h-screen md:bg-background-destination-tablet lg:bg-background-destination-desktop bg-no-repeat bg-cover"
+    class="md:h-full lg:h-screen md:bg-background-destination-tablet lg:bg-background-destination-desktop bg-no-repeat bg-cover"
   >
     <SharedTheHeader />
     <main>
