@@ -36,20 +36,21 @@ onBeforeUnmount(() => {
 
 <template>
   <div
-    class="tech h-screen md:bg-background-technology-tablet lg:bg-background-technology-desktop bg-no-repeat bg-cover"
+    class="tech md:h-full lg:h-screen md:bg-background-technology-tablet lg:bg-background-technology-desktop bg-no-repeat bg-cover"
   >
     <SharedTheHeader />
     <main>
       <SharedPageTitle num="03" txt="Space launch 101" />
       <section
-        class="flex sm:flex-col lg:flex-row gap-16 justify-around mt-14 pl-inner"
+        class="flex md:flex-col lg:flex-row gap-16 justify-around mt-14 lg:pl-inner"
       >
+      <TechImg class="sm:block lg:hidden" :current-step="currentTech" />
         <!-- Step buttons -->
         <div
-          class="flex md:flex-row lg:flex-col gap-10 items-start md:w-full lg:w-[10%]"
+          class="flex md:flex-row lg:flex-col gap-10 items-start md:justify-center lg:justify-start md:w-full lg:w-[10%]"
         >
           <button
-            class="rounded-full p-8 text-h4 font-bellefair border border-opacity-25 hover:border-opacity-100 border-white w-20 h-20 flex items-center justify-center"
+            class="rounded-full p-8 md:text-2xl lg:text-h4 font-bellefair border border-opacity-25 hover:border-opacity-100 border-white md:w-16 lg:w-20 md:h-16 lg:h-20 flex items-center justify-center"
             :class="{ selected: currentTech.name === t.name }"
             v-for="(t, i) in technology"
             @click="handleStepChange(i)"
@@ -59,14 +60,14 @@ onBeforeUnmount(() => {
         </div>
 
         <!-- Info -->
-        <div class="w-[40%]">
-          <div class="opacity-50 text-h4 font-bellefair">
+        <div class="md:text-center lg:text-left md:w-full lg:w-[40%]">
+          <div class="opacity-50 md:text-base lg:text-h4 font-bellefair">
             {{ "The technology...".toUpperCase() }}
           </div>
-          <h1 class="font-bellefair text-h3">
+          <h1 class="font-bellefair md:text-[40px] lg:text-h3">
             {{ currentTech.name.toUpperCase() }}
           </h1>
-          <p class="font-barlow text-blueish text-lg w-3/4">
+          <p class="inline-block font-barlow text-blueish md:text-center md:mb-20 lg:mb-0 lg:text-left md:text-base lg:text-lg md:w-1/2 lg:w-3/4">
             {{ currentTech.description }}
           </p>
         </div>
@@ -74,7 +75,7 @@ onBeforeUnmount(() => {
         <!-- Placeholder div -->
         <div class="sm:hidden lg:block lg:w-[30%]"></div>
 
-        <TechImg :current-step="currentTech" />
+        <TechImg class="sm:hidden lg:block" :current-step="currentTech" />
       </section>
     </main>
   </div>
