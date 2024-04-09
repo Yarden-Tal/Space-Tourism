@@ -54,7 +54,7 @@ onBeforeUnmount(() => {
       <div class="flex gap-20 md:justify-center lg:justify-start">
         <div>
           <div class="text-blueish font-barlow mb-1 text-sm">AVG. DISTANCE</div>
-          <div class="font-bellefair text-subh1 over">
+          <div class="font-bellefair text-subh1 over whitespace-nowrap">
             {{ currentPlanet.distance.toUpperCase() }}
           </div>
         </div>
@@ -62,7 +62,7 @@ onBeforeUnmount(() => {
           <div class="text-blueish font-barlow mb-1 text-sm">
             EST. TRAVEL TIME
           </div>
-          <div class="font-bellefair text-subh1 over md:mb-12 lg:mb-0">
+          <div class="font-bellefair text-subh1 over md:mb-12 lg:mb-0 whitespace-nowrap">
             {{ currentPlanet.travel.toUpperCase() }}
           </div>
         </div>
