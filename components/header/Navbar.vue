@@ -12,7 +12,7 @@ links.forEach((l: HeaderLink) => {
 </script>
 
 <template>
-  <nav>
+  <nav class="hidden md:block">
     <ul class="flex gap-10">
       <li v-for="(l, i) in links" :key="i">
         <NuxtLink

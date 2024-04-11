@@ -8,7 +8,7 @@ useHead({
 
 <template>
   <div
-    class="md:h-full lg:h-screen md:bg-background-home-tablet lg:bg-background-home-desktop bg-no-repeat bg-cover"
+    class="h-screen md:h-full lg:h-screen bg-background-home-mobile md:bg-background-home-tablet lg:bg-background-home-desktop bg-no-repeat bg-cover"
   >
     <SharedTheHeader />
     <main
@@ -18,7 +18,7 @@ useHead({
         <p class="md:text-center lg:text-left font-barlow text-h5 text-blueish">
           {{ "So, you want to travel to".toUpperCase() }}
         </p>
-        <h1 class="md:text-center lg:text-left font-bellefair text-h1">
+        <h1 class="md:text-center lg:text-left font-bellefair text-[80px] lg:text-h1">
           {{ "Space".toUpperCase() }}
         </h1>
         <p
