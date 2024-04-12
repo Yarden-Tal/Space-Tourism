@@ -16,18 +16,18 @@ const toggleMenu = () => (menuIsOpen.value = !menuIsOpen.value);
 </script>
 
 <template>
-  <header @keydown.esc="() => menuIsOpen = false" class="flex items-center justify-between md:pt-0 lg:pt-12 pl-10 pr-6 md:pr-0">
-    <NuxtLink to="/" class="mt-8 md:mt-0 justify-start min-w-[48px]">
+  <header @keydown.esc="() => menuIsOpen = false" class="flex items-center justify-between mt-5 md:pt-0 lg:pt-12 pl-6 md:pl-10 pr-10 md:pr-0">
+    <NuxtLink to="/" class="justify-start w-10 md:min-w-[48px]">
       <img src="../../assets/icons/header-star.svg" alt="Star" />
     </NuxtLink>
     <!-- MOBILE NAV -->
-    <div class="">
+    <div class="block md:hidden">
       <button @click="toggleMenu" >
         <img v-if="!menuIsOpen" src="../../assets/icons/icon-hamburger.svg" alt="Menu" />
       </button>
       <nav v-if="menuIsOpen" class="md:hidden backdrop-blur-2xl absolute top-0 right-0 h-screen">
-        <button @click="toggleMenu" class="w-fit ml-auto pr-9 pt-7">
-          <img v-if="menuIsOpen" src="../../assets/icons/icon-close.svg" alt="Close">
+        <button @click="toggleMenu" class="w-full pr-9 pt-7">
+          <img class="ml-auto" v-if="menuIsOpen" src="../../assets/icons/icon-close.svg" alt="Close">
         </button>
         <ul class="flex flex-col gap-1 pr-24 pt-10 pl-8">
           <li v-for="(l, i) in links" :key="i">
